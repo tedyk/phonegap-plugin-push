@@ -86,7 +86,10 @@
     <source-file src="src/ios/PushPlugin.m"/>
     <header-file src="src/ios/AppDelegate+notification.h"/>
     <header-file src="src/ios/PushPlugin.h"/>
-    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.0.0"/>
+    <pods-config ios-min-version="9.0" use-frameworks="true">
+			<source url="https://github.com/CocoaPods/Specs.git" />
+		</pods-config>
+		<pod name="FirebaseMessaging" spec="~> 2.0.0" />
     <framework src="PushKit.framework"/>
   </platform>
   <platform name="windows">
